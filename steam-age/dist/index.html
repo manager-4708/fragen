@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dampfzeitalter · Physik & Konstruktionen</title>
+    <script type="module" crossorigin src="./assets/index-B_JFa3o8.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-rsTCuykl.css">
+  </head>
+  <body>
+    <header class="top">
+      <p class="kicker">Web-Simulation · historische Exemplare · Kohle vs. Nutzen</p>
+      <h1 id="title">Konstruktion wählen</h1>
+      <p id="blurb"></p>
+      <p id="museum" class="museum"></p>
+      <p id="scenario" class="scenario"></p>
+    </header>
+
+    <nav id="timeline" class="timeline" aria-label="Epochen"></nav>
+
+    <main class="layout">
+      <section class="view3d">
+        <canvas id="view"></canvas>
+      </section>
+
+      <section class="panels">
+        <div class="coal-row">
+          <canvas id="coalMain" class="coal-canvas" aria-label="Kohlehaufen"></canvas>
+          <canvas id="coalGhost" class="coal-canvas ghost" aria-label="Vergleich Kohle"></canvas>
+        </div>
+        <canvas id="energyFlow" class="flow-canvas" aria-label="Energiefluss"></canvas>
+        <div id="taskMeter" class="task-wrap"></div>
+      </section>
+    </main>
+
+    <aside id="telemetry" class="telemetry" aria-live="polite"></aside>
+
+    <footer class="controls">
+      <button id="run" type="button">Dampf an</button>
+      <button id="coal" type="button">Kohle nachlegen (+10 kg)</button>
+      <button id="reset" type="button">Zurücksetzen</button>
+      <label class="check">
+        <input id="compare" type="checkbox" checked />
+        Vergleich: Newcomen (Ghost)
+      </label>
+      <label>Tempo
+        <select id="speed">
+          <option value="0.5">0,5×</option>
+          <option value="1" selected>1×</option>
+          <option value="2">2×</option>
+          <option value="4">4×</option>
+        </select>
+      </label>
+    </footer>
+
+    <details class="expert">
+      <summary>Expertenwerte (optional)</summary>
+      <pre id="expert"></pre>
+    </details>
+
+  </body>
+</html>

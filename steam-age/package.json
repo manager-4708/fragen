@@ -1,0 +1,19 @@
+{
+  "name": "steam-age",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0 --port 5174",
+    "build": "vite build",
+    "preview": "vite preview --host 0.0.0.0 --port 5174",
+    "publish:web": "npm run build && node scripts/sync-web.mjs",
+    "test": "node verify-sim.mjs && node verify-kinematics.mjs"
+  },
+  "dependencies": {
+    "three": "^0.170.0"
+  },
+  "devDependencies": {
+    "vite": "^6.3.5"
+  }
+}

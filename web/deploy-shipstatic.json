@@ -1,0 +1,8 @@
+{
+  "provider": "shipstatic.com",
+  "liveUrl": "https://hovering-nano-3hhm726.shipstatic.com",
+  "claimUrl": "https://my.shipstatic.com/claim/196720d2a55a07e2e11dc26ab6832099",
+  "expiresAt": "2026-09-30T13:33:20Z",
+  "updatedAt": "2026-09-27T13:33:20Z",
+  "note": "Anonyme Deploys verfallen nach 3 Tagen — claimUrl einmal im Browser öffnen."
+}
